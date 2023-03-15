@@ -3,17 +3,10 @@
   "version": "1.0.0",
   "author": "Ning Zheng",
   "license": "SEE LICENSE",
-  "description": "Deep Learning Valuation Application",
-  "homepage": "https://demos.creative-tim.com/deep-learning-solutions/",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/argon-dashboard-material-ui/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/argon-dashboard-material-ui.git"
-  },
+  "description": "Deep Learning Solutions in Mass Appraisal",
+  "homepage": "https://zngab.github.io/deep-learning-solutions-in-property-assessments/",
   "engines": {
-    "node": "14 || 15 || 16",
+    "node": ">=14",
     "npm": ">=6"
   },
   "dependencies": {
@@ -64,7 +57,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "install:peer-deps": "npm install --legacy-peer-deps"
+    "install:peer-deps": "npm install --legacy-peer-deps",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -91,6 +86,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.30.0",
     "eslint-plugin-react-hooks": "4.5.0",
+    "gh-pages": "^5.0.0",
     "prettier": "2.6.2"
   }
 }
